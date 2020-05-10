@@ -4,7 +4,7 @@
   "description": "Simple Snippet",
   "version": "0.5.0",
   "publisher": "yansaan",
-  "icon": "",
+  "icon": "logo.png",
   "repository": {
     "url": "https://github.com/yansaan/phpml"
   },

@@ -22,9 +22,9 @@ Snippets for PHP Templates + baseURL PHP framework to JS
 | php     | `<?php`                        | only php script (for class)                        |
 | phph    | `<?php #code; ?>`              | -                                                  |
 | echo    | `<?= this_echo ?>`             | arternative `<?php echo this_echo; ?>`             |
-| echo$  | `<?= $var ?>`                  | for echo/print variable ($)                       |
+| echo\$  | `<?= $var ?>`                  | for echo/print variable (\$)                       |
 | echo;   | `<?= this_echo; ?>`            | for add semicolon (;)                              |
-| echo$; | `<?= $this_echo; ?>`           | for echo/print variable ($) and add semicolon (;) |
+| echo\$; | `<?= $this_echo; ?>`           | for echo/print variable (\$) and add semicolon (;) |
 | echoif  | `<?= ($if) ? true : false ?>`  | echo ternary                                       |
 | echoif; | `<?= ($if) ? true : false; ?>` | echo ternary and add semicolon (;)                 |
 
@@ -52,6 +52,10 @@ For help and fix the snippet, visit my [Repository]()
 For info, click [HERE](http://yansaan.indoweb.xyz/support)
 
 ## Release Notes
+
+### 0.5.2
+
+Add logo and restaring git
 
 ### 0.5
 
