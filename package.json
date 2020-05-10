@@ -1,0 +1,33 @@
+{
+  "name": "phpml",
+  "displayName": "PHPml (PHP in HTML)",
+  "description": "Simple Snippet",
+  "version": "0.5.0",
+  "publisher": "yansaan",
+  "icon": "",
+  "repository": {
+    "url": "https://github.com/yansaan/phpml"
+  },
+  "engines": {
+    "vscode": "^1.44.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

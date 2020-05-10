@@ -1,0 +1,104 @@
+{
+  // PHP Tag Template
+  "PHP in HTML": {
+    "prefix": "phph",
+    "body": "<?php $1 ?>"
+  },
+  "PHP only": {
+    "prefix": "php",
+    "body": ["<?php", "$0"]
+  },
+  "For in HTML": {
+    "prefix": "phpfor",
+    "body": [
+      "<?php for( $${1:i} = ${2:0}; $${1:i} ${3|<,>,<=,>=|} ${4:1}; $${1:i}++) : ?>",
+      "${5:// Put Code here}",
+      "<?php endfor; ?>"
+    ]
+  },
+  "Foreatch in HTML": {
+    "prefix": "phpforeatch",
+    "body": [
+      "<?php foreatch( $${1:array} as ${2:val}) : ?>",
+      "${3:// Put Code here}",
+      "<?php endforeatch; ?>"
+    ]
+  },
+  "If in HTML": {
+    "prefix": "phpif",
+    "body": [
+      "<?php if(${1:\\$someware}) : ?>",
+      "${2:// Put Code here}",
+      "<?php endif; ?>"
+    ]
+  },
+  "If Else in HTML": {
+    "prefix": "phpifelse",
+    "body": [
+      "<?php if(${1:\\$someware}) : ?>",
+      "${2:// Put Code here}",
+      "<?php else : ?>",
+      "${3:// Put Code here}",
+      "<?php endif; ?>"
+    ]
+  },
+  "Else in HTML": {
+    "prefix": "phpelse",
+    "body": ["<?php else : ?>", "${1:// Put Code here}"]
+  },
+  "Else if in HTML": {
+    "prefix": "phpelseif",
+    "body": ["<?php else if(${1:\\$someware}) : ?>", "${2:// Put Code here}"]
+  },
+  // Echo Modification
+  "PHP Echo": {
+    "prefix": "echo",
+    "body": "<?= $1 ?>$0"
+  },
+  "PHP Echo with semicolon": {
+    "prefix": "echo;",
+    "body": "<?= $1; ?>$0"
+  },
+  "PHP Echo valiable": {
+    "prefix": "echo$",
+    "body": "<?= $$1 ?>$0"
+  },
+  "PHP Echo valiable with semicolon": {
+    "prefix": "echo$;",
+    "body": "<?= $$1; ?>$0"
+  },
+  "PHP Echo Ternary valiable": {
+    "prefix": "echoif",
+    "body": "<?= (${1:\\$someware}) ? ${2:true} ${3:: false} ?>$0"
+  },
+  "PHP Echo Ternary with semicolon": {
+    "prefix": "echoif;",
+    "body": "<?= (${1:\\$someware}) ? ${2:true} ${3:: false}; ?>$0"
+  },
+  // Base URL for JS
+  "calling BaseURL for JS": {
+    "prefix": "jsbaseurl",
+    "body": [
+      "<script>",
+      "const baseUrl = \"${1|<?= base_url() ?>,{{url('/')}},<?= url() ?>|}\";",
+      "</script>"
+    ],
+    "scope": "html",
+    "description": "This shippet for call base url (CI/Laravel) in Javascript file"
+  },
+  "BaseURL JS (Normal String single quotation mark)": {
+    "prefix": "'baseurl",
+    "body": "'.baseUrl.'$0'",
+    "scope": "javascript"
+  },
+  "BaseURL JS (Normal String double quotation mark)": {
+    "prefix": "\"baseurl",
+    "body": "\".baseUrl.\"$0\"",
+    "scope": "javascript"
+  },
+  "BaseURL JS (String literal)": {
+    "prefix": "baseurl",
+    "body": "\\${baseUrl\\}",
+    "scope": "javascript"
+  }
+}
