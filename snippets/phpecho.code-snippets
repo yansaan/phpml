@@ -1,0 +1,26 @@
+{
+  "PHP Echo": {
+    "prefix": "echo",
+    "body": "<?= $1 ?>$0"
+  },
+  "PHP Echo with semicolon": {
+    "prefix": "echo;",
+    "body": "<?= $1; ?>$0"
+  },
+  "PHP Echo valiable": {
+    "prefix": "echo$",
+    "body": "<?= $$1 ?>$0"
+  },
+  "PHP Echo valiable with semicolon": {
+    "prefix": "echo$;",
+    "body": "<?= $$1; ?>$0"
+  },
+  "PHP Echo Ternary valiable": {
+    "prefix": "echoif",
+    "body": "<?= (${1:\\$someware}) ? ${2:true} ${3:: false} ?>$0"
+  },
+  "PHP Echo Ternary with semicolon": {
+    "prefix": "echoif;",
+    "body": "<?= (${1:\\$someware}) ? ${2:true} ${3:: false}; ?>$0"
+  }
+}

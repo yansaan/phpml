@@ -18,15 +18,19 @@
     "snippets": [
       {
         "language": "html",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/phptemp.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/phpecho.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/baseurl.code-snippets"
       },
       {
         "language": "javascript",
-        "path": "./snippets/snippets.code-snippets"
-      },
-      {
-        "language": "css",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/baseurl.code-snippets"
       }
     ]
   }
