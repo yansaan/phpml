@@ -48,7 +48,7 @@ Snippets for PHP Templates + baseURL PHP framework to JS
 
 ## Support me!
 
-For help and fix the snippet, visit my [Repository]()
+For help and fix the snippet, visit my [Repository](https://github.com/yansaan/phpml)
 For info, click [HERE](http://yansaan.indoweb.xyz/support)
 
 ## Release Notes
