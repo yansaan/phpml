@@ -16,11 +16,11 @@
     ]
   },
   "Foreatch in HTML": {
-    "prefix": "phpforeatch",
+    "prefix": "phpforeach",
     "body": [
-      "<?php foreatch( $${1:array} as ${2:val}) : ?>",
+      "<?php foreach( $${1:array} as ${2:val}) : ?>",
       "${3:// Put Code here}",
-      "<?php endforeatch; ?>"
+      "<?php endforeach; ?>"
     ]
   },
   "If in HTML": {
