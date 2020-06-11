@@ -53,6 +53,10 @@ For info, click [HERE](http://yansaan.indoweb.xyz/support)
 
 ## Release Notes
 
+### 0.5.6
+
+Fix phpforeach
+
 ### 0.5.2
 
 Add logo and restaring git
