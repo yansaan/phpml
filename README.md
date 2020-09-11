@@ -2,6 +2,11 @@
 
 Snippets for PHP Templates + baseURL PHP framework to JS
 
+## Donating
+
+For Indonesian, you can donate on [Saweria](https://saweria.co/yansaan) | [Karyakarsa](http://karyakarsa.com/yansaan) | [Trakteer](http://trakteer.id/yansaan)
+For other regional, you can donate on [Patreon](https://patreon.com/yansaan_) | [PayPal](https://www.paypal.me/yansaanID)
+
 ## How To Use?
 
 ### 1. Snippets fo PHP Template
@@ -13,7 +18,7 @@ Snippets for PHP Templates + baseURL PHP framework to JS
 | phpelseif  | `<?php else if ($more_sometime): ?>`                                          | Add this inside if (php templates)         |
 | phpifelse  | `<?php if ($sometime): ?> #thisTrue <?php else: ?> #thisFalse <?php endif ?>` | -                                          |
 | phpfor     | `<?php for( i = 0; i < num; i++): ?> loooooop <?php endfor; ?>`               | -                                          |
-| phpforeach | `<?php foreach ($array as $a): ?> loooop <?php endforeatch; ?>`               | -                                          |
+| phpforeach | `<?php foreach ($array as $a): ?> loooop <?php endforeach; ?>`                | -                                          |
 
 ### 2. Snippets PHP Tags
 
@@ -46,12 +51,15 @@ Snippets for PHP Templates + baseURL PHP framework to JS
 | **`"baseurl`** | for normal sring with double quotation mark |
 | **`baseurl`**  | for string literal (ES6)                    |
 
-## Support me!
+## Support
 
 For help and fix the snippet, visit my [Repository](https://github.com/yansaan/phpml)
-For info, click [HERE](http://yansaan.indoweb.xyz/support)
 
 ## Release Notes
+
+### 0.5.7
+
+Change Readme
 
 ### 0.5.6
 
@@ -64,5 +72,3 @@ Add logo and restaring git
 ### 0.5
 
 Initial release
-
----
