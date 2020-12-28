@@ -1,5 +1,11 @@
 # Change Log
 
+# [0.6]
+- Delete $ and ; snippet
+- change base url snippet
+- Add null operator for echo snippet
+- Add match operator for echo snippet
+
 ## [0.5.7]
 
 - Changing Readme

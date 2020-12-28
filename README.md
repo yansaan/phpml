@@ -13,29 +13,27 @@ For other regional, you can donate on [Patreon](https://patreon.com/yansaan_) | 
 
 | Prefix     | Method                                                                        | Info                                       |
 | ---------- | ----------------------------------------------------------------------------- | ------------------------------------------ |
-| phpif      | `<?php if ($sometime): ?> #thisTrue <?php endif ?>`                           | -                                          |
+| phpif      | `<?php if (sometime): ?> #thisTrue <?php endif ?>`                           | -                                           |
 | phpelse    | `<?php else: ?>`                                                              | Add this inside if in last (php templates) |
-| phpelseif  | `<?php else if ($more_sometime): ?>`                                          | Add this inside if (php templates)         |
-| phpifelse  | `<?php if ($sometime): ?> #thisTrue <?php else: ?> #thisFalse <?php endif ?>` | -                                          |
-| phpfor     | `<?php for( i = 0; i < num; i++): ?> loooooop <?php endfor; ?>`               | -                                          |
-| phpforeach | `<?php foreach ($array as $a): ?> loooop <?php endforeach; ?>`                | -                                          |
+| phpelseif  | `<?php else if (more_sometime): ?>`                                          | Add this inside if (php templates)          |
+| phpifelse  | `<?php if (sometime): ?> #thisTrue <?php else: ?> #thisFalse <?php endif ?>` | -                                           |
+| phpfor     | `<?php for( i = 0; i < num; i++): ?><?php endfor; ?>`               | -                                                    |
+| phpforeach | `<?php foreach (array as $a): ?> loooop <?php endforeach; ?>`                | -                                           |
 
 ### 2. Snippets PHP Tags
 
-| Prefix  | Method                         | Info                                               |
-| ------- | ------------------------------ | -------------------------------------------------- |
-| php     | `<?php`                        | only php script (for class)                        |
-| phph    | `<?php #code; ?>`              | -                                                  |
-| echo    | `<?= this_echo ?>`             | arternative `<?php echo this_echo; ?>`             |
-| echo\$  | `<?= $var ?>`                  | for echo/print variable (\$)                       |
-| echo;   | `<?= this_echo; ?>`            | for add semicolon (;)                              |
-| echo\$; | `<?= $this_echo; ?>`           | for echo/print variable (\$) and add semicolon (;) |
-| echoif  | `<?= ($if) ? true : false ?>`  | echo ternary                                       |
-| echoif; | `<?= ($if) ? true : false; ?>` | echo ternary and add semicolon (;)                 |
+| Prefix    | Method                                                           | Info                                               |
+| --------- | ---------------------------------------------------------------- | -------------------------------------------------- |
+| php       | `<?php`                                                          | only php script (for class)                        |
+| phph      | `<?php #code; ?>`                                                | -                                                  |
+| echo      | `<?= this_echo ?>`                                               | arternative `<?php echo this_echo; ?>`             |
+| echoif    | `<?= ($if) ? true : false ?>`                                    | echo ternary                                       |
+| echonull  | `<?= $null ?-> $result ?>`                                       | echo null ternary (php 8 only)                     |
+| echomatch | `<?= match(someware) {true => "result", default => "result"} ?>` | echo match ternary (php 8 only)                    |
 
 ### 3. BONUS!!! JS Base URL
 
-> Prefix **`jsbaseurl`**
+> Prefix **`setbaseurl`**
 >
 > **Result:**
 >
@@ -47,15 +45,21 @@ For other regional, you can donate on [Patreon](https://patreon.com/yansaan_) | 
 
 | Prefix         | Info                                        |
 | -------------- | ------------------------------------------- |
-| **`'baseurl`** | for normal sring with single quotation mark |
-| **`"baseurl`** | for normal sring with double quotation mark |
 | **`baseurl`**  | for string literal (ES6)                    |
+| **`baseurl1`** | for normal sring with single quotation mark |
+| **`baseurl2`** | for normal sring with double quotation mark |
 
 ## Support
 
 For help and fix the snippet, visit my [Repository](https://github.com/yansaan/phpml)
 
 ## Release Notes
+
+### 0.6
+- Delete $ and ; snippet
+- change base url snippet
+- Add null operator for echo snippet
+- Add match operator for echo snippet
 
 ### 0.5.7
 

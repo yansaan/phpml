@@ -11,24 +11,21 @@
     "prefix": "phpfor",
     "body": [
       "<?php for( $${1:i} = ${2:0}; $${1:i} ${3|<,>,<=,>=|} ${4:1}; $${1:i}++) : ?>",
-      "${5:// Put Code here}",
-      "<?php endfor; ?>"
+      "$0<?php endfor; ?>"
     ]
   },
   "Foreatch in HTML": {
     "prefix": "phpforeach",
     "body": [
       "<?php foreach( $${1:array} as ${2:val}) : ?>",
-      "${3:// Put Code here}",
-      "<?php endforeach; ?>"
+      "$0<?php endforeach; ?>"
     ]
   },
   "If in HTML": {
     "prefix": "phpif",
     "body": [
       "<?php if(${1:\\$someware}) : ?>",
-      "${2:// Put Code here}",
-      "<?php endif; ?>"
+      "$0<?php endif; ?>"
     ]
   },
   "If Else in HTML": {
@@ -43,10 +40,10 @@
   },
   "Else in HTML": {
     "prefix": "phpelse",
-    "body": ["<?php else : ?>", "${1:// Put Code here}"]
+    "body": ["<?php else : ?>", "$0"]
   },
   "Else if in HTML": {
     "prefix": "phpelseif",
-    "body": ["<?php else if(${1:\\$someware}) : ?>", "${2:// Put Code here}"]
+    "body": ["<?php else if(${1:\\$someware}) : ?>", "$0"]
   }
 }

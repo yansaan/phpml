@@ -1,6 +1,6 @@
 {
     "calling BaseURL for JS": {
-        "prefix": "jsbaseurl",
+        "prefix": "setbaseurl",
         "body": [
           "<script>",
           "const baseUrl = \"${1|<?= base_url() ?>,{{url('/')}},<?= url() ?>|}\";",
@@ -10,12 +10,12 @@
         "description": "This shippet for call base url (CI/Laravel) in Javascript file"
       },
       "BaseURL JS (Normal String single quotation mark)": {
-        "prefix": "'baseurl",
+        "prefix": "baseurl1",
         "body": "'.baseUrl.'$0'",
         "scope": "javascript"
       },
       "BaseURL JS (Normal String double quotation mark)": {
-        "prefix": "\"baseurl",
+        "prefix": "baseurl2",
         "body": "\".baseUrl.\"$0\"",
         "scope": "javascript"
       },

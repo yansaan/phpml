@@ -3,24 +3,25 @@
     "prefix": "echo",
     "body": "<?= $1 ?>$0"
   },
-  "PHP Echo with semicolon": {
-    "prefix": "echo;",
-    "body": "<?= $1; ?>$0"
-  },
   "PHP Echo valiable": {
-    "prefix": "echo$",
-    "body": "<?= $$1 ?>$0"
-  },
-  "PHP Echo valiable with semicolon": {
-    "prefix": "echo$;",
-    "body": "<?= $$1; ?>$0"
+    "prefix": "echof",
+    "body": "<?= $1($2) ?>$0"
   },
   "PHP Echo Ternary valiable": {
     "prefix": "echoif",
-    "body": "<?= (${1:\\$someware}) ? ${2:true} ${3:: false} ?>$0"
+    "body": "<?= (${1:someware}) ? {2:true} : {3:false} ?>$0"
   },
-  "PHP Echo Ternary with semicolon": {
-    "prefix": "echoif;",
-    "body": "<?= (${1:\\$someware}) ? ${2:true} ${3:: false}; ?>$0"
+  "Echo Null Operator (php8 only)": {
+    "prefix": "echonull",
+    "body": "<?= ${1:someware} ?-> {2:someware}?>$0"
+  },
+  "Echo Match (php8 only)": {
+    "prefix": "echomatch",
+    "body": [
+      "<?= match({$1:someware}) {",
+        "{2:true} => {$3:more},",
+        "default => {$4:more},",
+      "} ?>"
+    ]
   }
 }
